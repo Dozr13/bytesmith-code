@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --font-inter: 'Inter', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,18 +17,57 @@
   }
 }
 
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply text-foreground bg-gradient-to-b from-background-start to-background-end min-h-screen;
+  font-family: var(--font-inter);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.body-no-scroll {
+  overflow: hidden;
+}
+
+main {
+  flex: 1;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+/* Global Styles for Toast */
+.toastify-toast {
+  border-radius: 8px !important;
+}
+
+.toastify-toast-success {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .Toastify__toast-container {
+    top: auto !important;
+    bottom: 16px !important;
+    right: 16px !important;
+    left: auto !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .Toastify__toast-container {
+    top: auto !important;
+    bottom: 16px !important;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
