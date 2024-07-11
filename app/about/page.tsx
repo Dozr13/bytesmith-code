@@ -15,17 +15,17 @@ export default function About() {
           </p>
         </div>
       </section>
-      <section className='bg-gray-100 dark:bg-gray-800 flex-grow py-8'>
+      <section className='bg-gray-100 dark:bg-gray-800 flex-grow py-4'>
         <div className='container mx-auto text-center px-4'>
           <Image className='w-32 h-32 mx-auto rounded-full' src={pictureOfWade} width={200} alt='Wade Profile' />
           <h3 className='mt-4 text-xl font-bold text-gray-900 dark:text-white'>Wade</h3>
           <p className='text-gray-600 dark:text-gray-300'>Founder & Lead Developer</p>
         </div>
       </section>
-      <section className='bg-white dark:bg-gray-900 flex-grow py-8'>
+      <section className='bg-white dark:bg-gray-900 flex-grow py-4'>
         <div className='container mx-auto px-4'>
           <h2 className='text-3xl font-bold mb-4 text-center text-gray-900 dark:text-white'>My Story</h2>
-          <p className='text-lg mb-4 mx-2 md:mx-8 lg:mx-16 text-gray-700 dark:text-gray-300'>
+          <p className='text-lg mb-2 mx-2 md:mx-8 lg:mx-16 text-gray-700 dark:text-gray-300'>
             Hi, I&apos;m Wade, the founder and lead developer of ByteSmith Code. With years of experience in the
             industry, I specialize in creating beautiful, functional websites that meet the needs of small businesses.
             My journey began with a deep interest in technology and a desire to help local businesses thrive in the
@@ -48,7 +48,7 @@ export default function About() {
             </ul>
           </div>
           <section className='bg-gray-100 dark:bg-gray-800 flex-grow py-4'>
-            <h2 className='text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white'>
+            <h2 className='text-3xl font-bold mb-8 py-4 text-center text-gray-900 dark:text-white'>
               Let&apos;s Work Together
             </h2>
             <p className='text-lg mx-2 md:mx-8 lg:mx-16 text-gray-700 dark:text-gray-300'>
