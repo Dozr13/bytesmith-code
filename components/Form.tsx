@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect, useRef } from 'react'
 import { sendEmail } from '@/actions/emailAction'
-import { showToast } from '@/helpers/toast'
+import { showToast } from '@/ui/helpers/toast'
 
 export default function Form() {
   const formRef = useRef<HTMLFormElement>(null)
