@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import pictureOfWade from '@/images/wade-profile.jpg'
+import pictureOfWade from './wade-profile.jpg'
 
 export default function About() {
     return (
