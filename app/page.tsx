@@ -4,10 +4,10 @@ export default function Home() {
             <section className="bg-white dark:bg-gray-900 py-10">
                 <div className="container mx-auto text-center">
                     <h1 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">Welcome to ByteSmith Code</h1>
-                    <p className="text-lg mb-4 text-gray-700 dark:text-gray-300">
+                    <p className="text-lg mb-2 text-gray-700 dark:text-gray-300">
                         At ByteSmith Code, we specialize in creating beautiful, functional websites for small businesses.
                     </p>
-                    <p className="text-lg mb-4 text-gray-700 dark:text-gray-300">
+                    <p className="text-lg mb-2 text-gray-700 dark:text-gray-300">
                         Whether you&apos;re starting from scratch or looking to improve your existing website, we have the skills and experience to help your business shine online.
                     </p>
                     <a href="/contact" className="inline-block bg-blue-600 text-white px-6 py-3 rounded mt-4">Get Started Today</a>
