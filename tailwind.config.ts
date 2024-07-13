@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: 'selector',
+  darkMode: 'class', // Using 'class' for dark mode is more common than 'selector'
   content: ['./app/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}', './providers/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {

@@ -1,4 +1,5 @@
 'use client'
+
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { RxHamburgerMenu } from 'react-icons/rx'
@@ -29,9 +30,8 @@ const Header = () => {
           </button>
         </div>
         <div
-          className={`flex-col lg:flex lg:flex-row lg:items-center lg:space-x-4 transition-all duration-300 ${
-            isMenuOpen ? 'flex' : 'hidden'
-          } lg:flex`}
+          className={`flex-col lg:flex lg:flex-row lg:items-center lg:space-x-4 transition-all duration-300 ${isMenuOpen ? 'flex' : 'hidden'
+            } lg:flex`}
         >
           <Link href='/' className='py-2 lg:py-0 lg:flex lg:items-center'>
             Home
@@ -52,16 +52,16 @@ const Header = () => {
       </nav>
       {isMenuOpen && (
         <div className='fixed inset-0 bg-gray-900 bg-opacity-90 flex flex-col items-center justify-center space-y-4 z-40 lg:hidden'>
-          <Link href='/' onClick={toggleMenu} className='text-2xl'>
+          <Link href='/' onClick={toggleMenu} className='text-2xl text-white'>
             Home
           </Link>
-          <Link href='/about' onClick={toggleMenu} className='text-2xl'>
+          <Link href='/about' onClick={toggleMenu} className='text-2xl text-white'>
             About
           </Link>
-          <Link href='/services' onClick={toggleMenu} className='text-2xl'>
+          <Link href='/services' onClick={toggleMenu} className='text-2xl text-white'>
             Services
           </Link>
-          <Link href='/contact' onClick={toggleMenu} className='text-2xl'>
+          <Link href='/contact' onClick={toggleMenu} className='text-2xl text-white'>
             Contact
           </Link>
         </div>
