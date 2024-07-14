@@ -3,17 +3,21 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 31, 41, 55; /* Equivalent to text-gray-800 */
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 17, 24, 39;
+  --container-bg-light: 243, 244, 246;
+  --container-bg-dark: 31, 41, 55;
   --font-inter: 'Inter', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
+    --background-start-rgb: 17, 14, 19;
     --background-end-rgb: 0, 0, 0;
+    --container-bg-light: 31, 41, 55;
+    --container-bg-dark: 243, 244, 246;
   }
 }
 
@@ -36,6 +40,8 @@ body {
 
 main {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 @layer utilities {
