@@ -1,25 +1,27 @@
 import Link from 'next/link'
 import ServiceCard from '@/components/services/ServiceCard'
-import { services } from '@/data/serviceData'
+import { Service } from '@/types/data'
+import iconMapping from '@/ui/iconMapping'
 
 interface ServicesListSectionProps {
+  services: Service[]
   shortVersion?: boolean
 }
 
-const ServicesListSection: React.FC<ServicesListSectionProps> = ({ shortVersion = false }) => {
+const ServicesListSection: React.FC<ServicesListSectionProps> = ({ services, shortVersion = false }) => {
   const servicesToDisplay = shortVersion ? services.slice(0, 3) : services
 
   return (
     <section className='bg-gray-100 dark:bg-gray-800 flex-grow py-12'>
       <div className='container mx-auto px-4'>
         <div className={`grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 text-md lg:text-xl gap-8`}>
-          {servicesToDisplay.map((service) => (
+          {servicesToDisplay.map(service => (
             <ServiceCard
               key={service.title}
               title={service.title}
               description={service.description}
               details={shortVersion ? '' : service.details}
-              icon={service.icon}
+              icon={iconMapping[service.icon]}
             />
           ))}
         </div>

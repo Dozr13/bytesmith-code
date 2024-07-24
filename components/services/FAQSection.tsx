@@ -1,7 +1,12 @@
 import React from 'react'
-import { faqs } from '@/data/faqs'
+import { FAQ } from '@/types/data'
 
-const FAQSection: React.FC = () => {
+interface FAQSectionProps {
+  faqs: FAQ[]
+}
+
+const FAQSection: React.FC<FAQSectionProps> = ({ faqs }) => {
+
   return (
     <section className='bg-gray-100 dark:bg-gray-800 flex-grow py-12'>
       <div className='container mx-auto px-4'>
