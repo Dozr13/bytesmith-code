@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import ServiceCard from '@/components/services/ServiceCard'
 import { Service } from '@/types/data'
-import iconMapping from '@/ui/iconMapping'
+import iconMapping from '@/utils/iconMapping'
 
 interface ServicesListSectionProps {
   services: Service[]

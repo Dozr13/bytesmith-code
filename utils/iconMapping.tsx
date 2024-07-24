@@ -7,7 +7,7 @@ const iconMapping: { [key: string]: JSX.Element } = {
   FaShoppingCart: <FaShoppingCart className='text-red-600' size={48} />,
   FaTools: <FaTools className='text-indigo-600' size={48} />,
   FaCloud: <FaCloud className='text-purple-600' size={48} />,
-  FaDatabase: <FaDatabase className='text-gray-600' size={48} />,
+  FaDatabase: <FaDatabase className='text-gray-800' size={48} />,
   FaRobot: <FaRobot className='text-orange-600' size={48} />,
   FaChartLine: <FaChartLine className='text-teal-600' size={48} />,
 }
